@@ -9,7 +9,7 @@ import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 public class Conexión {
     private static SessionFactory Sesion;
 
-    public void IniciarConexión() throws Exception {
+    public static void IniciarConexión() throws Exception {
         final StandardServiceRegistry registry = new StandardServiceRegistryBuilder()
                 .configure() // por defecto: hibernate.cfg.xml
                 .build();
@@ -25,7 +25,7 @@ public class Conexión {
         return Sesion.openSession();
     }
 
-    public void CerrarConexión(){
+    public static void CerrarConexión(){
         Sesion.close();
     }
 }

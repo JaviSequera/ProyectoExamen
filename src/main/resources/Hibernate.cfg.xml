@@ -17,5 +17,8 @@
         <!-- Establece el contexto de la sesion-->
         <property name="current_session_context_class">thread</property>
         <property name="hibernate.hbm2ddl.auto">update</property>
+        <mapping class = "EntidadesPrueba.Alumnos"/>
+        <mapping class = "EntidadesPrueba.MatriculaEntidad"/>
+        <mapping class = "EntidadesPrueba.ProfesorEntidad"/>
     </session-factory>
 </hibernate-configuration>
